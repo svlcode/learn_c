@@ -1,4 +1,4 @@
-//#define DATA_TYPES
+#define DATA_TYPES
 
 #ifdef DATA_TYPES
 
@@ -15,6 +15,17 @@ int main() {
 
 	int x = 5, 
 		y = 6;
+
+	int octal_number = 015; // this is 13 in the octal format
+	printf("octal_number = %d\r\n", octal_number); // decimal
+	printf("octal_number = %o\r\n", octal_number); // octal
+	printf("octal_number = %x\r\n", octal_number); // hexa
+	
+	int hexa_number = 0x23; // this is 35 in hexadecimal format
+	printf("hexa_number = %d\r\n", hexa_number); // decimal
+	printf("hexa_number = %o\r\n", hexa_number); // octal
+	printf("hexa_number = %x\r\n", hexa_number); // hexa
+
 
 	// long is an alias for long int
 	// short is an alias for short int

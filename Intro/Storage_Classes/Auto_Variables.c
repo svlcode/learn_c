@@ -1,4 +1,4 @@
-#define AUTO_VAR
+//#define AUTO_VAR
 #ifdef AUTO_VAR
 #include <stdio.h>
 
