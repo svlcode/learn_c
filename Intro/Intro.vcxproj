@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.c" />
+    <ClCompile Include="Count Digits.c" />
+    <ClCompile Include="Data_Types.c" />
+    <ClCompile Include="Scanf_Function.c" />
+    <ClCompile Include="Strings.c" />
+    <ClCompile Include="Variables.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.c">
+    <ClCompile Include="Variables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Count Digits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanf_Function.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Data_Types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Strings.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
