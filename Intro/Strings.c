@@ -1,4 +1,4 @@
-#define STRINGS
+//#define STRINGS
 #ifdef STRINGS
 
 #include <stdio.h>
@@ -16,7 +16,7 @@ int main() {
 	printf("length of name is: %d\n", strlen(name));
 
 	printf("\n");
-
+	
 	char str[5] = "abc";
 
 	int length_str = sizeof(str) / sizeof(str[0]);
@@ -24,6 +24,8 @@ int main() {
 	printf("value of str is %s\n", str);
 	printf("length of str is: %d\n", strlen(str));
 
+	// in a char array of length 5, you can only copy a string of 4 characters
+	// because you have to leave room for the null terminating character.
 	strcpy(str, "1234");
 	printf("value of str is %s\n", str);
 	printf("length of str is: %d\n", strlen(str));

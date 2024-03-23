@@ -130,6 +130,8 @@
     <ClCompile Include="Count Digits.c" />
     <ClCompile Include="Data_Types.c" />
     <ClCompile Include="Scanf_Function.c" />
+    <ClCompile Include="Storage_Classes\Auto_Variables.c" />
+    <ClCompile Include="Storage_Classes\Static_Variables.c" />
     <ClCompile Include="Strings.c" />
     <ClCompile Include="Variables.c" />
   </ItemGroup>

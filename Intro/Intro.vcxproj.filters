@@ -30,5 +30,11 @@
     <ClCompile Include="Strings.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Storage_Classes\Static_Variables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Storage_Classes\Auto_Variables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
