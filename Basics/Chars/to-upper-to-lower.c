@@ -1,3 +1,5 @@
+#ifdef TOUPPER
+
 #include <stdio.h>
 
 int main()
@@ -16,3 +18,5 @@ int main()
   }
   printf("%c", ch);
 }
+
+#endif // TOUPPER

@@ -1,4 +1,4 @@
-#define CHARS
+//#define CHARS
 #ifdef CHARS
 #include <stdio.h>
 

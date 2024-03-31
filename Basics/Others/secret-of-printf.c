@@ -1,3 +1,5 @@
+#ifdef PRINTF_SECRET
+
 #include <stdio.h>
 
 int main()
@@ -11,3 +13,5 @@ int main()
   // the inner printf will be executed first
   printf(" (%d characters printed)", printf("Hello World"));
 }
+
+#endif // PRINTF_SECRET

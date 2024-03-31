@@ -1,3 +1,7 @@
+// #define FLUSH
+
+#ifdef FLUSH
+
 #include <stdio.h>
 
 // fflush(stdin) - is not working anymore. this is a better solution:
@@ -12,24 +16,26 @@ int main()
 {
   int i;
   printf("Enter a number: ");
-  scanf("%d", &i);
+  scanf_s("%d", &i);
 
   // after the first scanf there wil enter character left
   // in the input buffer which will  be grabbed by the second
   // scanf, and therefore we will not be able to input our
   // own char
 
-  clear_buffer();
+  // clear_buffer();
 
   char ch;
   printf("Enter a char: ");
   // previously: scanf("%c", &ch);
   // by puting a space before %c it will flush the input buffer
-  scanf("%c", &ch);
+  scanf_s(" %c", &ch);
 
-  clear_buffer();
+  // clear_buffer();
 
   int j;
   printf("Enter another number: ");
-  scanf(" %d", &j);
+  scanf_s(" %d", &j);
 }
+
+#endif // FLUSH

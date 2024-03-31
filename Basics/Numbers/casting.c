@@ -1,3 +1,5 @@
+#ifdef CASTING
+
 #include <stdio.h>
 
 int main()
@@ -9,3 +11,5 @@ int main()
 
   printf("r = %f", r);
 }
+
+#endif // CASTING

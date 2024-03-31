@@ -1,3 +1,5 @@
+#ifdef ASCII
+
 #include <stdio.h>
 
 int main()
@@ -8,3 +10,5 @@ int main()
   }
   
 }
+
+#endif // ASCII

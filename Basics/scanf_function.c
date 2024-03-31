@@ -1,5 +1,4 @@
-
-#define SCANF_FUNC
+//#define SCANF_FUNC
 
 #ifdef SCANF_FUNC
 #include <stdio.h>
@@ -21,11 +20,6 @@ int main()
 	read_int(&age);
 
 	printf("Your entered age is: %d", age);
-
-	// flush away all characters typed in by the
-	// keyboard but not read by the program
-	// but somehow it doesn't work
-	int c2 = fflush(stdin);
 
 	int c = getchar();
 	// getchar();
