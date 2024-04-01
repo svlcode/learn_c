@@ -1,4 +1,4 @@
-#define ARR1
+// #define ARR1
 
 #ifdef ARR1
 
@@ -7,7 +7,10 @@
 int main()
 {
   int array[] = {1, 2, 3};
-  printf("The size of the array is: %d\n", sizeof(array) / sizeof(array[0]));
+  printf("The size of the array is: %d\n", sizeof(array));
+
+  // The length of the array is the size of the array divided by the size of an element of the array
+  printf("The length of the array is: %d\n", sizeof(array) / sizeof(array[0]));
 
   // the rest of the elements not specified they will be zero
   int array2[5] = {1, 2, 3};
