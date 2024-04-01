@@ -4,7 +4,6 @@
 
 int read_integer()
 {
-  int i = 0;
   int number = 0;
   while (1)
   {
@@ -14,10 +13,11 @@ int read_integer()
       break;
     }
 
+    // todo fix bug: when number is too big and you remove digits
     // only read the digit if the first digit is not zero
     if (isdigit(ch))
     {
-      if (i == 0 && ch == '0')
+      if (number == 0 && ch == '0')
         printf("\b \b", ch);
       else
       {
@@ -27,7 +27,7 @@ int read_integer()
         number = (number * 10) + digit; // add it to the number
       }
     }
-    else if (ch == '\b')
+    else if (ch == '\b' && number != 0)
     {
       printf("\b \b", ch); // remove the character, add a space and then move back
       number /= 10;
