@@ -5,6 +5,9 @@
 
 # Executables
 *.exe
+*.dll
+*.a
+*.o
 
 # User-specific files
 *.rsuser
