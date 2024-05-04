@@ -8,8 +8,8 @@ int main()
   p = &a;
 
   printf("Addess of p is %d\n", p);
-  printf("size of integer is %d bytes\n", sizeof(int));
   printf("Addess of p+1 is %d\n", p + 1); // if p is 2002, then p+1 would be 2006
+  printf("size of integer is %d bytes\n", sizeof(int));
 
   a = 1025;
 
