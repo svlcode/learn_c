@@ -10,10 +10,14 @@ int main()
   printf("Addess of p is %d\n", p);
 
   // void pointer;
-  void *p0;
-  p0 = p;
+  void *vp;
+  vp = p;
 
-  printf("Addess of p0 is %d\n", p0);
-  // *p0 is not allowed - compile time error
-  // p0+1 is also not allowed - compile time error
+  printf("Addess of vp is %d\n", vp);
+  // *vp is not allowed - compile time error
+  // vp+1 is also not allowed - compile time error
+  // however, I can use something like this:
+
+  printf("Casting a void pointer to an integer pointer, then dereference the pointer:\n");
+  printf("*((int *)vp) = %d\n", *((int *)vp));
 }
